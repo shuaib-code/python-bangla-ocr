@@ -17,7 +17,7 @@ os.makedirs(output_dir, exist_ok=True)
 
 # Iterate over images and extract text
 for i, image in enumerate(images):
-    # Perform OCR on the image
+    #  Perform OCR on the image
     text = pytesseract.image_to_string(image, lang='ben')  # 'ben' is the language code for Bangla
 
     # Save the extracted text to a file
